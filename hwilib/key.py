@@ -106,10 +106,10 @@ class ExtendedKey(object):
     A BIP 32 extended public key.
     """
 
-    MAINNET_PUBLIC = b'\x04\x88\xB2\x1E'
-    MAINNET_PRIVATE = b'\x04\x88\xAD\xE4'
-    TESTNET_PUBLIC = b'\x04\x35\x87\xCF'
-    TESTNET_PRIVATE = b'\x04\x35\x83\x94'
+    MAINNET_PUBLIC = b'\x03\xDD\x3E\x31'
+    MAINNET_PRIVATE = b'\x03\xDD\x3E\x5A'
+    TESTNET_PUBLIC = b'\x04\x30\x68\x80'
+    TESTNET_PRIVATE = b'\x04\x30\x68\xaa'
 
     def __init__(self, version: bytes, depth: int, parent_fingerprint: bytes, child_num: int, chaincode: bytes, privkey: Optional[bytes], pubkey: bytes) -> None:
         """
